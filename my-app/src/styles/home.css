@@ -1,0 +1,10 @@
+.landing_imageContainer {
+    width: 100vw;
+    height: 600px;
+    object-fit: contain;
+}
+
+.landing_imageContainer {
+    width: 100%;
+    height: 100%;
+}
