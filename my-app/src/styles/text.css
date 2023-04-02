@@ -1,0 +1,8 @@
+.landing_text {
+    width: 100%;
+}
+
+.landing_text>p {
+    color: white;
+    font-size: 2.5rem;
+}
