@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
-import { Animator, Fade, ScrollPage } from "react-scroll-motion";
 import '../../styles/characters.css'
 
 const Characters = (props) => {

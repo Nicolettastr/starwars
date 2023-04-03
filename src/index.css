@@ -220,47 +220,6 @@ ul {
   text-align: justify;
 }
 
-.text .col {
-  width: auto;
-  font-size: 3.6rem;
-  color: white;
-  border: #f3eeee solid 2px;
-  margin: 4% 10%;
-  border-radius: 10px;
-}
-
-.imgContainer {
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.figureContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-bottom: 10%;
-}
-
-.imgContainer img {
-  width: 65%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
 
 
 .individualBtn {

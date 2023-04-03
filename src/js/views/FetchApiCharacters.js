@@ -5,42 +5,42 @@ import { SingleCharacters } from "../component/SingleCharacters";
 
 export const FetchApiCharacters = (props) => {
 
-    const API_PEOPLE = "https://www.swapi.tech/api/people/";
-    const [infoCharacter, setInfoCharacter] = useState([])
-    const [loading, setLoading] = useState(true)
-    const theid = useParams();
-  
-  
-    const getData = useCallback(async () => {
-      await fetch(`${API_PEOPLE}${theid.theid}`)
-        .then(response => response.json())
-        .then(data => setInfoCharacter(data.result.properties))
-        .catch(error => console.error(error))
-        .finally(() => setLoading(false));
-    }, [API_PEOPLE, theid.theid] );
-  
-  
-  
-    useEffect(() => {
-        getData();
-    }, [getData]);
+  const API_PEOPLE = "https://www.swapi.tech/api/people/";
+  const [infoCharacter, setInfoCharacter] = useState([])
+  const [loading, setLoading] = useState(true)
+  const theid = useParams();
 
-	if(loading){
-		return (
-			<div className="lds-circle"><div></div></div>
-		)
-	}
 
-	return (
-		<>
+  const getData = useCallback(async () => {
+    await fetch(`${API_PEOPLE}${theid.theid}`)
+      .then(response => response.json())
+      .then(data => setInfoCharacter(data.result.properties))
+      .catch(error => console.error(error))
+      .finally(() => setLoading(false));
+  }, [API_PEOPLE, theid.theid]);
 
-		<div>
-			<SingleCharacters starWars={props.characters_img} info={infoCharacter}/>
-		</div>
 
-      	
-	</>
-	)
+
+  useEffect(() => {
+    getData();
+  }, [getData]);
+
+  if (loading) {
+    return (
+      <div className="lds-circle"><div></div></div>
+    )
+  }
+
+  return (
+    <>
+
+      <div>
+        <SingleCharacters theid={theid} starWars={props.characters_img} info={infoCharacter} />
+      </div>
+
+
+    </>
+  )
 };
 
 FetchApiCharacters.propTypes = {

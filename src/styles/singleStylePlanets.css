@@ -1,0 +1,13 @@
+.single_planetsColor {
+    background-color: #1d1c1cda;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.figureContainer {
+    padding: 0;
+}
+
+.imgContainer {
+    width: 65%;
+}

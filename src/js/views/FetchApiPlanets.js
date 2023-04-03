@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react"
 import { useParams } from "react-router-dom";
 import PropTypes from "prop-types";
-import  SinglePlanets  from "../component/SinglePlanets";
- 
+import SinglePlanets from "../component/SinglePlanets";
+
 
 export const FetchApiPlanets = (props) => {
   const API_PLANETS = "https://www.swapi.tech/api/planets/";
@@ -17,7 +17,7 @@ export const FetchApiPlanets = (props) => {
       .then(data => setInfoPlanet(data.result.properties))
       .catch(error => console.error(error))
       .finally(() => setLoadingPlanet(false));
-  }, [API_PLANETS, theid.theid] );
+  }, [API_PLANETS, theid.theid]);
 
 
 
@@ -29,13 +29,13 @@ export const FetchApiPlanets = (props) => {
 
   return (
     <>
-    <div className="container">
-			<SinglePlanets starWars={props.starWars} planetImg={props.planetImg} info={infoPlanet} faHeart={props.faHeart}/>
-		</div>
+      <div className="container">
+        <SinglePlanets theid={theid} starWars={props.starWars} planetImg={props.planetImg} info={infoPlanet} faHeart={props.faHeart} />
+      </div>
 
-     
 
-      
+
+
     </>
   )
 };
