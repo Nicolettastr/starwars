@@ -1,8 +1,16 @@
 .landing_text {
     width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .landing_text>p {
     color: white;
     font-size: 2.5rem;
+}
+
+.text_container {
+    height: 400px !important;
 }

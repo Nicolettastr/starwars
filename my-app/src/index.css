@@ -10,6 +10,7 @@
   font-family: 'Chakra Petch', sans-serif;
 }
 
+
 .link {
   text-decoration: none;
 }
@@ -177,24 +178,14 @@ ul {
   background-color: black !important;
 }
 
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section {
   margin-bottom: 20%;
-}
-
-.selectSection {
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-top: 15%;
-  padding: 3%;
-}
-
-.selectImg {
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .imgFigure {

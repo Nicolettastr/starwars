@@ -1,0 +1,29 @@
+.selectSection {
+    width: 100%;
+    height: 100%;
+    margin-top: 15%;
+    padding: 3%;
+  }
+  
+  .selectImg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .select_containerScroll>div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cardsBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+  }

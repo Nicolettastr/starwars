@@ -1,21 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "../../styles/select.css"
 
 const Select = () => {
+
+    const btn = [
+        {
+            id: 1234,
+            name: "Characters",
+            link: "TypesOfCharacters"
+        }, 
+        {
+            id: 45654,
+            name: "Planets",
+            link: "TypesOfPlanets"
+        }
+    ]
+
     return (
         <div className="selectSection">
             <div  className="selectImg">
-                
-                <Link className="cardsBtn" to="/TypesOfCharacters">
-				    <button className="cardsTitle">Characters</button>
-			    </Link>
-			
-			
-			    <Link className="cardsBtn" to="/TypesOfPlanets">
-				    <button className="cardsTitle">Planets</button>
-			    </Link>
-              
+                {btn.map((button) => {
+                    return (
+                        <Link key={button.id} className="cardsBtn" to={`/${button.link}`}>
+                            <button className="cardsTitle">{button.name}</button>
+                        </Link>
+                    )
+                })}
             </div>
         </div>
     )
