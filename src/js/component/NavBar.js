@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import { Link } from "react-router-dom";
 import Dropdown from './DropDown';
-import { Animator, ScrollContainer, ScrollPage, Fade } from 'react-scroll-motion';
+import '../../styles/nav.css'
 
 export const NavBar = (props) => {
   return (
@@ -29,7 +29,12 @@ export const NavBar = (props) => {
             <ul className='navCont navbar-nav me-auto mb-2 mb-lg-0 ul-cont'>
               <li className="nav-item size">
                 <Link className="btnNav" to="/TypesOfPlanets">
-                  <button className="cardsTitle">Planets</button>
+                  <button>Planets</button>
+                </Link>
+              </li>
+              <li className="nav-item size">
+                <Link className="btnNav" to="/TypesOfCharacters">
+                  <button>Characters</button>
                 </Link>
               </li>
               <Dropdown faTrash={props.faTrash} faHeart={props.faHeart} />

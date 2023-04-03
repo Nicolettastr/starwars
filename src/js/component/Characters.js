@@ -13,7 +13,7 @@ const Characters = (props) => {
         const theid = item.id;
 
         return (
-            <div key={index} className="card card-style bg-dark text-white shadow-lg rounded" style={{ width: "24rem" }}>
+            <div key={index} className="card card-style dark-bg text-white shadow-lg rounded" style={{ width: "24rem" }}>
                 <img src={`https://starwars-visualguide.com/assets/img/characters/${item.id}.jpg`} className="card-img-top" alt="..." />
 
                 <div className="card-body">

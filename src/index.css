@@ -75,9 +75,7 @@ a {
   height: 100%;
 }
 
-.dropdown {
-  margin-right: 80px;
-}
+
 
 .card {
   margin: 15px;
@@ -132,29 +130,6 @@ ul {
   font-size: 1.8rem;
   text-align: start;
   padding: 5px;
-}
-
-.dropdown-menu li {
-  width: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 10px;
-}
-
-.deleteBtn {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  background-color: #f3eeee;
-  border: 1px solid #f83e4b;
-  color: #f83e4b;
 }
 
 .btn-secondary {
@@ -238,17 +213,6 @@ ul {
 .liContainer {
   display: -ms-grid;
   display: grid;
-}
-
-.btnNav button {
-  width: 120px;
-  height: 42px;
-  font-size: 1.8rem;
-  border-radius: 0.25rem;
-  border: 1px solid #fff;
-  background-color: #181818;
-  color: white;
-
 }
 
 .favoritesHeart {
@@ -372,22 +336,6 @@ ul {
     height: 45px;
     margin-top: 6%;
     font-size: 1.6rem;
-  }
-
-
-  .navBarButton {
-    width: 90%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    margin: 5%;
-  }
-
-  .navCont {
-    margin: 5% 0;
   }
 
   .size {
