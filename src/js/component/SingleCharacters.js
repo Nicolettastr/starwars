@@ -8,8 +8,8 @@ export const SingleCharacters = (props) => {
     return (
         <div className="container single_view">
             <div className="container d-flex justify-content-center m-5">
-                <div className="card mb-3 rounded-0 single_backgroundColor" style={{ maxWidth: "740px" }}>
-                    <div className="row g-0">
+                <div className="card mb-3 rounded-0 " style={{ maxWidth: "740px" }}>
+                    <div className="row g-0 single_backgroundColor">
                         <div className="col-md-12 figureContaine">
                             <figure className="imgContainer">
                                 <img src={`https://starwars-visualguide.com/assets/img/characters/${props.theid.theid}.jpg`} alt="Imagen no encontrada" />

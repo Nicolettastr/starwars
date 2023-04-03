@@ -59,7 +59,7 @@
 }
 
 .single_backgroundColor {
-    background-color: #1d1c1cda;
+    background: #1d1c1cda !important;
     border: none;
     border-radius: 0.5rem;
 }
