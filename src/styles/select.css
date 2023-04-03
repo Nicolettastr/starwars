@@ -7,16 +7,29 @@
   background-image: url('../img/2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-box-shadow: 0px 10px 20px rgba(34, 34, 36, 0.795) inset;
   box-shadow: 0px 10px 20px rgba(34, 34, 36, 0.795) inset;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .selectSection>div {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -25,6 +38,7 @@
 }
 
 .zoomed {
+  -webkit-animation: none !important;
   animation: none !important;
 }
 
@@ -39,8 +53,14 @@
 .select_containerScroll>div {
   height: 100%;
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 

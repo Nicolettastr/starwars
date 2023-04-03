@@ -22,5 +22,8 @@
     border-left: 1px dashed white;
     background-color: #181818;
     color: white;
+}
 
+.NavBar-text {
+    font-size: 21px;
 }
