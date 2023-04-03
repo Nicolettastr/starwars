@@ -2,19 +2,20 @@ import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
-
+import { Animator, Fade, ScrollPage } from "react-scroll-motion";
+import '../../styles/characters.css'
 
 const Characters = (props) => {
-    
-	const { store, actions } = useContext(Context);
-   
+
+    const { store, actions } = useContext(Context);
+
     const peopleData = store.characters.map((item, index) => {
 
-    const theid = item.id;
+        const theid = item.id;
 
         return (
-            <div  key={index} className="card card-style bg-dark text-white shadow-lg rounded" style={{width: "24rem"}}>
-                <img src={`https://starwars-visualguide.com/assets/img/characters/${item.id}.jpg`} className="card-img-top" alt="..."/>
+            <div key={index} className="card card-style bg-dark text-white shadow-lg rounded" style={{ width: "24rem" }}>
+                <img src={`https://starwars-visualguide.com/assets/img/characters/${item.id}.jpg`} className="card-img-top" alt="..." />
 
                 <div className="card-body">
                     <h5 className="card-title">{item.name}</h5>
@@ -25,8 +26,7 @@ const Characters = (props) => {
                         <button className="btn btn-warning">Learn more</button>
                     </Link>
                     <button onClick={() => actions.addFavoritesPlanet(theid)} className="favoritesBtn btn btn-outline-warning"><FontAwesomeIcon className="faHeart" icon={props.faHeart} /></button>
-
-</div>
+                </div>
             </div>
         )
     })
@@ -36,7 +36,7 @@ const Characters = (props) => {
             {peopleData}
         </div>
     )
-    
+
 };
 
 export default Characters;

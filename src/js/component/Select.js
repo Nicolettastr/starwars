@@ -1,34 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../../styles/select.css"
+import { Animator, Move, ScrollPage, Zoom, batch } from "react-scroll-motion";
 
 const Select = () => {
 
-    const btn = [
-        {
-            id: 1234,
-            name: "Characters",
-            link: "TypesOfCharacters"
-        }, 
-        {
-            id: 45654,
-            name: "Planets",
-            link: "TypesOfPlanets"
-        }
-    ]
 
     return (
-        <div className="selectSection">
-            <div  className="selectImg">
-                {btn.map((button) => {
-                    return (
-                        <Link key={button.id} className="cardsBtn" to={`/${button.link}`}>
-                            <button className="cardsTitle">{button.name}</button>
-                        </Link>
-                    )
-                })}
+        <>
+            <div className="selectSection">
+                <ScrollPage>
+                    <Animator animation={batch(Zoom(8, 2))}>
+                        <h1>Choose</h1>
+                    </Animator>
+                </ScrollPage>
             </div>
-        </div>
+        </>
     )
 };
 
